@@ -1,0 +1,161 @@
+/* Estilos del formulario de inicio de sesión */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los elementos dentro del formulario */
+    align-items: center; /* Centra horizontalmente los elementos dentro del formulario */
+    width: 500px; /* Ancho fijo para el formulario */
+    height: 600; /* Ajusta la altura automáticamente */
+    background: #e0e0e0; /* Fondo del formulario */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff; /* Sombra neumórfica */
+    margin: auto; /* Centra el formulario en la página */
+    padding: 20px; /* Espacio interno para evitar que el contenido esté pegado a los bordes */
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+    width: 80%; /* Ajustar el ancho de los campos de entrada */
+}
+
+input:focus {
+    box-shadow: inset 10px 10px 30px #bebebe,
+                inset -10px -10px 30px #ffffff;
+}
+
+.button-container {
+    display: flex; /* Habilita el uso de flexbox */
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 15px; /* Espacio superior opcional para los botones */
+    width: 100%; /* Hacer que el contenedor ocupe todo el ancho del formulario */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    flex: 1; /* Los botones ocuparán el mismo ancho */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #45a049; /* Color de fondo al pasar el ratón */
+    box-shadow: 15px 15px 40px #bebebe,
+                -15px -15px 40px #ffffff;
+}
+
+
+
+
+
+
+/* ---------------------------------Formulario de contacto------------------------------------- */
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+}
+
+#contacto h2 {
+    margin-top: 0;
+}
+
+#contacto-contenedor {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las columnas */
+    margin-top: 30px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 1200px; /* Limita el ancho máximo */
+}
+
+#mapa {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    height: 440px; /* Altura del mapa */
+    margin-right: 20px; /* Espacio entre mapa y formulario */
+    display: flex;
+    flex-direction: column; /* Alinear el contenido verticalmente */
+}
+
+#mapa h3 {
+    margin-top: 0; /* Sin margen superior para alinear */
+    text-align: center; /* Centrar el texto */
+}
+
+#mapa iframe {
+    width: 100%; /* Ancho completo */
+    height: calc(100% - 40px); /* Altura del iframe menos el espacio del título */
+    border: 0; /* Sin borde */
+}
+
+#formulario-contacto {
+    flex: 1; /* Ocupa el 50% del espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-contacto h3 {
+    margin-top: 0; /* Sin margen superior para alinear */
+    text-align: center; /* Centrar el texto */
+}
+
+#formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; /* Distribuir los elementos del formulario */
+}
+
+#formulario-contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 90%; /* Asegura que los elementos ocupen el ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+}
+
+
+#formulario-contacto button {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #082fb1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formulario-contacto button:hover {
+    background-color: #00a2ff;
+}
+
+/* Aumentar el margen inferior del contenedor del formulario */
+#formulario-contacto {
+    margin-bottom: 20px; /* Añadir espacio inferior */
+}
+

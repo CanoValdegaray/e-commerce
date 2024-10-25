@@ -5,13 +5,13 @@ function toggleDarkMode() {
     const icon = document.getElementById("icon");
 
 
-    // Alternar la visibilidad de las hojas de estilo
+
     if (darkStyle.disabled) {
-        darkStyle.disabled = false; // Activar modo oscuro
-        normalStyle.disabled = true; // Desactivar modo claro
+        darkStyle.disabled = false; 
+        normalStyle.disabled = true; 
     } else {
-        darkStyle.disabled = true; // Desactivar modo oscuro
-        normalStyle.disabled = false; // Activar modo claro
+        darkStyle.disabled = true;
+        normalStyle.disabled = false;
     }
     body.classList.toggle("dark-mode");
     
@@ -24,9 +24,9 @@ function toggleDarkMode() {
         }
     });
     if (body.classList.contains("dark-mode")) {
-        icon.textContent = "🌙";  // Ícono de luna para modo oscuro
+        icon.textContent = "🌙";
     } else {
-        icon.textContent = "🌞";  // Ícono de sol para modo claro
+        icon.textContent = "🌞";
     }
 
 }

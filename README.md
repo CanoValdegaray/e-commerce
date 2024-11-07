@@ -20,4 +20,4 @@ Página de Login y Registro: Los usuarios pueden registrarse y acceder a sus cue
 Agregue funcionalidades utilizando JavaScript para mejorar la interactividad del sitio. 
 
 
-Tengo que continuar trabajando en la pagina de productos.
+Tengo que continuar trabajando en la pagina de productos y en las @Query para trabajar la responsividad del sitio, no use Bootstrap preferi realizar los estilos en dos Hojas de CSS distintas una para el modo claro y la otra para el modo oscuro.

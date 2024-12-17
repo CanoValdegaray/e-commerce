@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/W1c6yQSg/HubTech.png" type="image/x-icon">
+    <title>Tienda Digital</title>
+    <link rel="stylesheet" href="Ligth-Style.css" id="style-light"> 
+    <link rel="stylesheet" href="Dark-Style.css" id="style-dark" disabled>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://i.postimg.cc/W1c6yQSg/HubTech.png" alt="Logo de la Tienda" />
+            </div>
+            <h1 class="title">Tienda Digital</h1>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+
+
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+        <section id="Login">
+            <h1>Ingreso</h1>
+            <p>Ingresa tus credenciales para continuar o realiza el registro.</p>
+            <div id="formulario-Login">
+                <form id="LoginForm" onsubmit="return false;">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="Clave">Contraseña</label>
+                    <input type="password" id="clave" name="clave" required>
+                
+                    <button id="Ingresar" type="submit">Ingresar</button>
+                    <button id="Registrarse" type="button" onclick="window.location.href='Registro.html';">Registrarse</button> 
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <a id="whatsapp" href="https://wa.me/56940649506" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    </a>
+
+    <button id="dark-mode-toggle" title="Cambiar modo" onclick="toggleDarkMode()">
+        <span id="icon" style="font-size: 24px;">🌞</span>
+    </button>
+
+    <div id="PopupLogin" class="popup hidden">
+        <p id="popup-message">Debes REGISTRARTE para poder ingresar</p>
+    </div>
+    
+
+    <script src="Login.js"></script>
+    <script src="Action.js"></script>
+
+</body>
+</html>

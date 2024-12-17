@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/W1c6yQSg/HubTech.png" type="image/x-icon">
+    <title>Tienda Digital</title>
+    <link rel="stylesheet" href="Ligth-Style.css" id="style-light"> 
+    <link rel="stylesheet" href="Dark-Style.css" id="style-dark" disabled>
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://i.postimg.cc/W1c6yQSg/HubTech.png" alt="Logo de la Tienda" />
+            </div>
+            <h1 class="title">Tienda Digital</h1>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+        <section id="Compras">
+            <h1>Verifica las compras realizadas y los medios de pago.</h1>
+
+            <div id="cart-container">
+                <div class="cart-card">
+                    <h2>Elementos seleccionados</h2>
+
+                    <div id="cart-items"></div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="javascript:void(0);" id="clear-cart" class="cart-action-link">Eliminar todo</a></li>
+                            <li><a href="javascript:void(0);" id="checkout" class="cart-action-link">Finalizar compra</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <a id="whatsapp" href="https://wa.me/56940649506" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    </a>
+
+    <button id="dark-mode-toggle" title="Cambiar modo" onclick="toggleDarkMode()">
+        <span id="icon" style="font-size: 24px;">🌞</span>
+    </button>
+
+    <div id="PopupCompra" class="popup hidden">
+        <p id="PopupCompraText"></p> 
+
+  
+    <script src="Login.js"></script>
+    <script src="Action.js"></script>
+    <script src="Compra.js"></script>
+</body>
+</html>

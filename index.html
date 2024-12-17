@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/W1c6yQSg/HubTech.png" type="image/x-icon">
+    <title>Tienda Digital</title>
+    <link rel="stylesheet" href="Ligth-Style.css" id="style-light">
+    <link rel="stylesheet" href="/Dark-Style.css" id="style-dark">
+    
+
+
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://i.postimg.cc/W1c6yQSg/HubTech.png" alt="Logo de la Tienda" />
+            </div>
+            <h1 class="title">Tienda Digital</h1>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    
+
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a nuestra Tienda en Línea</h1>
+            <p>Encuentra los mejores productos al mejor precio.</p>
+            <p>
+                En nuestra tienda en línea, nos especializamos en ofrecer una amplia variedad de productos de alta calidad
+                para todos tus gustos y necesidades. Desde lo último en tecnología, electrodomésticos de última generación,
+                hasta muebles modernos y accesorios para el hogar, garantizamos que siempre encontrarás lo que buscas, 
+                ¡y a precios insuperables! 
+            </p>
+            <p>
+                Con un enfoque en la satisfacción del cliente, proporcionamos una experiencia de compra sencilla, segura
+                y cómoda, desde la selección de productos hasta el pago y la entrega. Nuestro equipo trabaja constantemente 
+                para asegurarse de que nuestros clientes reciban sus productos de manera rápida y sin complicaciones.
+                Además, contamos con un servicio de atención al cliente disponible para ayudarte en todo momento.
+            </p>
+            <p>
+                Explora nuestras ofertas exclusivas, descubre productos únicos y aprovecha nuestras promociones especiales.
+                No importa si buscas renovar tu hogar, actualizar tus gadgets o simplemente encontrar el regalo perfecto, 
+                en nuestra tienda en línea estamos aquí para ofrecerte una experiencia de compra excepcional.
+            </p>
+        </section>
+        
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="container">
+                <div id="carousel">
+                    <figure><img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202210/06/00194612200868____8__1200x1200.jpg" alt=""></figure>
+                    <figure><img src="https://images.fravega.com/f1000/799a8ceaf934954792eea028e9b44cfd.jpg" alt=""></figure>
+                    <figure><img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e211763/images/large/1CC22293982.jpg?sw=1200&sh=1200&sm=fit" alt=""></figure>
+                    <figure><img src="https://titanprocurementlimited.com/wp-content/uploads/2020/10/61JbCra7GL._SL1500_.jpg" alt=""></figure>
+                    <figure><img src="https://www.arroba.com.mx/byte/blog/wp-content/uploads/G73Jw_Left_Open135-15cm.jpg" alt=""></figure>
+                    <figure><img src="https://images.fravega.com/f1000/3aba545c0a622a305911a1d1c1e99a26.jpg" alt=""></figure>
+                    <figure><img src="https://images.idgesg.net/images/article/2019/12/oculus_go-100824642-large.jpg" alt=""></figure>
+                    <figure><img src="https://m.media-amazon.com/images/I/41uDIt3pVRS._SL500_.jpg" alt=""></figure>
+                    <figure><img src="https://gamecenterpro.cl/wp-content/uploads/2021/01/tc3.png" alt=""></figure>
+                </div>
+                <div id="controls">
+                    <button type="button" onclick="window.location.href='./Login.html';">Comprar</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contáctanos para más información o visítanos en nuestra tienda física.</p>
+            
+            <div id="contacto-contenedor">
+                <div id="mapa">
+                    <iframe 
+                    id="iframe" 
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2442.3792799335115!2d-58.37269398717274!3d-34.60896385328546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbalcarse%2050!5e0!3m2!1ses!2sar!4v1729706524797!5m2!1ses!2sar" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                </div>
+                <div id="formulario-contacto">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="FormEnviar">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+            
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+                        <button id="Enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        
+            <a href="https://wa.me/1234567890" target="_blank" id="whatsapp" title="Contáctanos en WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <a id="whatsapp" href="https://wa.me/56940649506" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    </a>
+    <button id="dark-mode-toggle" title="Cambiar modo" onclick="toggleDarkMode()">
+        <span id="icon" style="font-size: 24px;">🌞</span>
+    </button>
+    
+  <script src="Action.js"></script>
+</body>
+</html>
